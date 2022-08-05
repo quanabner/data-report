@@ -1,0 +1,24 @@
+{
+  "name": "data-report",
+  "version": "1.0.0",
+  "description": "data report project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quanabner/data-report.git"
+  },
+  "keywords": [
+    "vue",
+    "data",
+    "report"
+  ],
+  "author": "Abner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quanabner/data-report/issues"
+  },
+  "homepage": "https://github.com/quanabner/data-report#readme"
+}

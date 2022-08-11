@@ -17,7 +17,7 @@
       reader.addEventListener('load', function (e) {
         const base64Image = e.target.result; // 获取文件内容，等同于 reader.result
         cb(base64Image);
-        reader = null;
+        reader = null; // 让reader被垃圾回收机制回收
       });
       reader.readAsDataURL(file); // 读取 file 对象中的内容
     }
@@ -52,7 +52,7 @@
         document.body.append(canvas);
 
         const ctx = canvas.getContext('2d');
-        ctx.clearRect(0, 0, maxW, maxH);
+        ctx.clearRect(0, 0, maxW, maxH); // 清空绘图区域所有像素
         ctx.drawImage(image, 0, 0, maxW, maxH); // 渲染图片
         const compressImage = canvas.toDataURL('image/jpeg', 0.9); // 压缩图片
         cb(compressImage);

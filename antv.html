@@ -51,9 +51,12 @@
         },
       },
       yAxis: {
-        formatter: (v) => {
-          return v + 'k';
+        label: {
+          formatter: (v) => {
+            return v + 'k';
+          },
         },
+
       },
     });
     plot.render();

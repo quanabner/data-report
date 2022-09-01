@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>创建地图场景</title>
+  <script src="https://unpkg.com/@antv/l7"></script>
   <style>
     html,
     body {
@@ -23,7 +24,7 @@
 
 <body>
   <div id="map"></div>
-  <script src="https://unpkg.com/@antv/l7"></script>
+
   <script>
 
     const scene = new L7.Scene({
@@ -33,7 +34,7 @@
         center: [120.19382669582967, 30.258134],
         pitch: 0,
         zoom: 6,
-        token: '***',
+        token: 'e8653883477c1e38d190463340771816'
       }),
     });
     scene.on('loaded', () => {
